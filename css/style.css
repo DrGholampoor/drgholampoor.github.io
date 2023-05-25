@@ -32,6 +32,7 @@ Version:	1.0
 body, html {
 	height: 100%;
 	width: 100%;
+	direction: rtl;
 }
 
 body {
@@ -98,7 +99,11 @@ a:hover {
 	vertical-align: middle;
 	padding: 10px;
 }
-
+.avatar {
+	width: 100%;
+	aspect-ratio: 1/1;
+    border-radius: 50%;
+}
 .navigation {
 	padding: 0px;
 	margin: 0px;
@@ -126,13 +131,15 @@ a:hover {
 }
 
 .navigation li a {
-	padding: 23.7px 25px;
+	padding: 23px 25px;
 	display: table;
 	width: 100%;
 	text-align: right;
-	font-size: 17px;
+	font-size: 15px;
 	color: #d1d1d1;
 	position: relative;
+    font-family: 'Open Sans';
+    text-decoration: none;
 }
 
 .navigation li a i {
@@ -284,7 +291,7 @@ a:hover {
 }
 
 .personal-info li {
-	float: left;
+	float: right;
 	list-style: none;
 	margin-right: 20px;
 	margin-bottom: 20px;
